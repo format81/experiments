@@ -1,0 +1,38 @@
+{
+  "version": "4.5",
+  "name": "Lazarus Group TTPs",
+  "domain": "enterprise",
+  "description": "TTPs identified in Lazarus Group's Operation Blacksmith",
+  "techniques": [
+    {
+      "techniqueID": "T1190",
+      "tactic": "initial-access",
+      "comment": "Used CVE-2021-44228 to exploit publicly exposed servers for initial access."
+    },
+    {
+      "techniqueID": "T1059",
+      "tactic": "execution",
+      "comment": "Used commands and scripts (like PowerShell and BAT) to execute different operations"
+    },
+    {
+      "techniqueID": "T1543",
+      "tactic": "persistence",
+      "comment": "Used NineRAT to set up persistence by creating services using BAT scripts."
+    },
+    {
+      "techniqueID": "T1140",
+      "tactic": "defense-evasion",
+      "comment": "NineRAT has a dropper binary containing two other components, which are written to disk and the dropper deletes itself to avoid detection."
+    },
+    {
+      "techniqueID": "T1102",
+      "tactic": "command-and-control",
+      "comment": "Used Telegram bots and channels for C2 communications."
+    },
+    {
+      "techniqueID": "T1082",
+      "tactic": "discovery",
+      "comment": "Used commands like \"whoami\", \"ver\", \"getmac\" for system information discovery."
+    },
+    {
+      "techniqueID": "T1005",
